@@ -1,0 +1,222 @@
+body {
+  background-color: whitesmoke;
+  position: absolute;
+  top: 36px;
+}
+.welcome {
+  margin-top: 10%;
+  background: antiquewhite;
+  text-align: center;
+  margin: auto;
+  border-radius: 8px;
+  max-width: 350px;
+}
+.welcome p {
+  margin: 5%;
+}
+.frontPageBackground {
+  margin-top: 20%;
+  background-image: url(brick-wall.jpg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul {
+  list-style: none;
+}
+.wrapper {
+  width: auto;
+  overflow: auto;
+  background-color: whitesmoke;;
+}
+.loginButtons a:visited {
+  color: white;
+  text-decoration: none;
+}
+.loginButtons a {
+  text-decoration: none;
+}
+.fixed-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 5px;
+  background-color: transparent;
+}
+.loginButtons {
+  float: right;
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 1%;
+  text-align: center;
+  text-decoration: none;
+}
+.loginButtons button {
+  text-align: center;
+}
+
+.hello {
+  float: right;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#loginForm {
+  margin-left: 3%;
+  float: left;
+  width: 100%;
+}
+
+.navbarContainer {
+  display: inline-block;
+  margin-top: 10px;
+  height: 36px;
+}
+
+
+
+.clickIt {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.user-greeting {
+  display: inline-block;
+  vertical-align: -webkit-baseline-middle;
+  margin-right: 20px;
+}
+
+input {
+  font-size: 14px;
+}
+
+button {
+  /*width: 10%;
+  height: 15%;*/
+}
+
+.wrapper button {
+  /*width: 30%;
+  height: 10%;*/
+}
+
+@font-face{
+	font-family: 'underwood_champion';
+	/*src: url('WebFont.eot');*/
+	src:
+  /*url('WebFont.eot?#iefix') format('embedded-opentype'),*/
+	     /*url('WebFont.woff') format('woff'),*/
+	     url('fonts/underwood_champion.ttf') format('truetype')
+	     /*url('WebFont.svg#webfont') format('svg');*/
+}
+
+html, p, h1, h2, h3, h4 {
+  font-family: 'underwood_champion';
+}
+
+.extras {
+  background-color: #222;
+}
+.picSize {
+  width: 400px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.stock_beer {
+  height: 220px;
+  width: 220px;
+}
+
+#signUpButton {
+  width: 22%;
+  height: 10%;
+  font-size: 10px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1%;
+}
+.li-flex {
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  margin: 1%;
+  max-width: 70%;
+}
+.block {
+  display: block;
+  text-align: center;
+}
+
+.detailsTitle {
+  text-align: center;
+}
+.content {
+  display: inline-flex;;
+  float: left;
+}
+
+button {
+   background-color: #21282d;
+   background: -webkit-gradient(linear, left top, left bottom, from(#21282d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #21282d, #65a9d7);
+   background: -moz-linear-gradient(top, #21282d, #65a9d7);
+   background: -ms-linear-gradient(top, #21282d, #65a9d7);
+   background: -o-linear-gradient(top, #21282d, #65a9d7);
+   padding: 3px 7px;
+   -webkit-border-radius: 8px;
+   -moz-border-radius: 8px;
+   border-radius: 8px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 15px;
+   font-family: Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+button:hover {
+   /*border-top-color: #345063;*/
+   background: #0f1112;
+   color: white;
+   }
+button:active {
+   border-top-color: #1b435e;
+   background: #1b435e;
+   }
+/*.tradeBeer {
+  margin: 10%;
+}*/
+.profileResults {
+  text-align: center;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+.detailsTable td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+
+/*body {
+  background: linear-gradient(ghostwhite, antiquewhite);
+}*/

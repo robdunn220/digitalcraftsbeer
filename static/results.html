@@ -1,0 +1,12 @@
+<div class="flex">
+  <div class="flex" ng-repeat="result in results">
+      <h4 >{{result.name}}</h4>
+
+      <img src="{{result.labels.medium}}" ng-if="result.labels" ng-click="getBeerDetails(result)">
+
+      <img src="{{result.images.medium}}" ng-if="result.images" ng-click="getBeerDetails(result)">
+
+      <img class="stock_beer" src="iStock_beer.jpg" ng-if="!result.labels && !result.images" ng-click="getBeerDetails(result)">
+
+  </div>
+</div>

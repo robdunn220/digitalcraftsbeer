@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script src="angular.js"></script>
+    <script src="angular-ui-router.js"></script>
+    <script src="angular-cookies.min.js"></script>
+    <script src="something.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+    <meta charset="utf-8">
+    <title>Beer</title>
+  </head>
+  <body ng-app="BeerApp">
+    <nav class="fixed-nav-bar">
+    <div class="wrapper">
+      <div class="navbarContainer">
+        <form id="loginForm" ng-submit="searchFunction(searchTerm, filter)">
+          <select ng-init="filter='both'" ng-model="filter">
+            <option value="both">Breweries and Beers</option>
+            <option value="beers">Just Beers</option>
+            <option value="breweries">Just Breweries</option>
+          </select>
+          <input type="text" ng-model="searchTerm" placeholder="Search">
+          <button type="submit" class="clickIt">Go</button>
+        </form >
+      </div>
+      <div class="loginButtons">
+        <a ui-sref="user_profile" class="myProfile" ng-show="logState"><button type="button" ng-show="logState">My Cellar</a>
+        <a ui-sref="login" ng-hide="logState"><button type="button" ng-hide="logState">Login</button></a>
+        <a ng-click="logOut()" ng-show="logState"><button type="button">Logout</button></a>
+        <a ui-sref="users" ><button type="button">Users</button></a>
+        <a ui-sref="signup" ng-hide="logState"><button type="button" ng-hide="logState">Signup</button></a>
+      </div>
+      <div class="hello">
+        <span class="user-greeting" ng-show="logState" >Logged In:{{user_name}}</span>
+      </div>
+    </div>
+
+
+
+        <!-- <a ui-sref="user_profile" class="loginButtons" ng-show="logState"><button type="button">My Profile</a>
+        <a ui-sref="login" ng-hide="logState" class="loginButtons"> <button type="button">Login</button></a>
+        <a ng-click="logOut()" ng-show="logState" class="loginButtons"> <button type="button">Logout</button></a>
+        <a ui-sref="users" class="loginButtons"><button type="button">Users</button></a>
+        <a ui-sref="signup" ng-hide="logState" class="loginButtons"> <button type="button">Signup</button></a>
+        <span ng-show="logState" class="loginButtons">Hello, {{user_name}}!</span> -->
+    </nav>
+    <!-- <br> -->
+    <!-- <img id="homePic" src="iStock_beer.jpg" alt="" width="500px"/> -->
+    <ui-view></ui-view>
+  </body>
+</html>
